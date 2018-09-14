@@ -1,12 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Eigenes CSS -->
+    <link rel="stylesheet" href="sytle.css">
+
+    <title>Survey Form powered from freeCodeCamp</title>
+  </head>
+  <body >
+    <div>
+        <h1 id="title" class="container jumbotron text-center">Survey Form</h1>
+            <p id="description" class="container text-center">Bitte die folgenden Felder für die neue DSVGO ausfüllen</p>
+                <form id="survey-form" class="container text-center">
+                    <label id="name-label" for="name" class="container">Name: 
+                        <input id="name" name="name" type="text" placeholder="Hier muss Ihr Name stehen" required>
+                    </label>
+                    <label id="email-label" for="email" class="container">E-Mail: 
+                        <input id="email" name="email" type="email" placeholder="example@example.com" required>
+                    </label>
+                    <label id="number-label" for="number" class="container">Alter: 
+                        <input id="number" name="number" type="number" min="14" max="200" placeholder="18" required>
+                    </label>
+                    <label for="dropdown" class="container">Arbeitgeber: 
+                        <select id="dropdown" name="dropdown">
+                            <option disabled value>Select an Option</option>
+                            <option value="IBM">IBM</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Twitter">Twitter</option>
+                        </select> 
+                    </label>
+                    <label for="radio-buttons" class="container">Wählen Sie Ihr Geschlecht aus: 
+                        <ul>
+                            <li>
+                                <label>
+                                    <input value="1" type="radio" name="radio-buttons">
+                                    Männlich
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input value="2" type="radio" name="radio-buttons">
+                                    Weiblich
+                                </label>
+                            </li>
+                        </ul>
+                    </label>
+                    <label for="einkommen" class="container">Wählen Sie Ihr Einkommen aus: 
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" value="1">
+                                    0 bis 500 €
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" value="2">
+                                    500 bis 1000 €
+                                </label>
+                            </li>
+                        </ul>
+                    </label>
+                    <label for="textfeld" class="container">Hier ist Platz für Kommentare: 
+                        <textarea name="textfeld" placeholder="Hier den Kommentar reinschreiben"></textarea>
+                    </label>
+                    <button id="submit" name="button" class="btn btn-dark">Bestätigen</button>
+                </form>
+    </div>
+
+    <!-- Hier ist der CDN Link zum validieren der Aufgaben -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
